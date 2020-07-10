@@ -1,6 +1,9 @@
 package xyz.ecbn.binarmovie
 
+import android.app.Activity
 import android.app.Application
+import android.content.pm.ActivityInfo
+import android.os.Bundle
 import io.github.inflationx.calligraphy3.CalligraphyConfig
 import io.github.inflationx.calligraphy3.CalligraphyInterceptor
 import io.github.inflationx.viewpump.ViewPump
@@ -11,6 +14,7 @@ import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 import xyz.ecbn.binarmovie.module.*
 
+
 /**
  * BinarMovie Created by ecbn on 08/07/20.
  */
@@ -19,6 +23,7 @@ class BinarMovieApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        
         startKoin {
             androidLogger(Level.DEBUG)
             androidContext(this@BinarMovieApp)
