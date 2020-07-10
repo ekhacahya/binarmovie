@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BinarMovie</string>
+
+    <string name="detail_length"> min</string>
+    <string name="title_storyline">Storyline</string>
+    <string name="more_trailers">More Trailers</string>
+    <string name="view_all">View All</string>
+    <string name="posters">Posters</string>
+    <string name="cast_overview">Cast Overview</string>
+    <string name="error">Error</string>
+    <string name="rate_this">Rate This</string>
+    <string name="metascore">Metascore</string>
+    <string name="dummy_votes">23 Votes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

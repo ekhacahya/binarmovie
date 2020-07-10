@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/singleMovieFragment">
+
+    <fragment
+        android:id="@+id/singleMovieFragment"
+        android:name="xyz.ecbn.binarmovie.view.dashboard.DashboardFragment"
+        android:label="fragment_single_movie"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_singleMovieFragment_to_detailMovieFragment"
+            app:destination="@id/detailMovieFragment"
+            app:popUpTo="@id/singleMovieFragment" />
+        <argument
+            android:name="movie"
+            app:argType="xyz.ecbn.binarmovie.model.Movie" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailMovieFragment"
+        android:name="xyz.ecbn.binarmovie.view.detail.DetailMovieFragment"
+        android:label="detail_movie_fragment"
+        tools:layout="@layout/detail_movie_fragment">
+        <action
+            android:id="@+id/action_detailMovieFragment_to_youtubeFragment"
+            app:destination="@id/youtubeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/youtubeFragment"
+        android:name="xyz.ecbn.binarmovie.view.detail.YoutubeFragment"
+        android:label="fragment_youtube"
+        tools:layout="@layout/fragment_youtube">
+        <argument
+            android:name="video"
+            app:argType="xyz.ecbn.binarmovie.model.Video" />
+    </fragment>
+</navigation>
